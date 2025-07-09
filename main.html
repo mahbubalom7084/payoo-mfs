@@ -12,7 +12,7 @@
 <body class="bg-slate-800">
     <section class=" max-w-md min-h-screen mx-auto py-6 bg-gray-200">
         <header>
-            <nav class="flex justify-around items-center">
+            <nav class="flex justify-between items-center m-2">
                 <div class="flex justify-around items-center gap-2">
                     <img class="w-16" src="./Payoo-MFS-Resources-main/assets/Group.png" alt="logo">
                     <div class="#">
@@ -28,32 +28,59 @@
                 <p class="m-2">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
                 <!-- cards -->
-                 <div class="cards grid grid-cols-3 mt-10 gap-2 p-2">
-                    <div class="box border p-4 text-center rounded-sm">
+                <div class="cards grid grid-cols-3 mt-10 gap-2 p-2">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
                         <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
                         <h3>Add Money</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/purse1.png" alt="">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/send1.png" alt="">
                         <h3>Cashout</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/money1.png" alt="">
                         <h3>Transfer Money</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/bonus1.png" alt="">
                         <h3>Get Bonus</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/purse1.png" alt="">
                         <h3>Pay Bill</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
-                 </div>
+                </div>
+
+                <!-- add money section -->
+                <section>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold m-2 ">Add Money</h2>
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <fieldset class="fieldset">
+                                        <label class="label">Bank Account Number</label>
+                                        <input value="01744400024" type="number" class="input"
+                                            placeholder="Enter 11 digit account number" />
+                                        <label class="label">Amount to Add</label>
+                                        <input type="number" class="input" placeholder="Add amount to withdeaw" />
+                                        <label class="label">Pin Number</label>
+                                        <input value="1234" type="text" class="input" placeholder="Enter 4 digit pin number" />
+                                        <!-- <div><a class="link link-hover">Forget pin?</a></div> -->
+                                        <button id="login-btn"
+                                            class="rounded-3xl w-80 btn btn-neutral border-none mt-5 bg-[#0874F2]">Add
+                                            Money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </header>
     </section>
