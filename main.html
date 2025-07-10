@@ -30,11 +30,11 @@
 
                 <!-- cards -->
                 <div class="cards grid grid-cols-3 mt-10 gap-2 p-2">
-                    <div class="box cursor-pointer border p-4 text-center rounded-md">
+                    <div id="addMoney-box" class="box cursor-pointer border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/wallet1.png" alt="">
                         <h3>Add Money</h3>
                     </div>
-                    <div class="box cursor-pointer border p-4 text-center rounded-md">
+                    <div id="cashout-box" class="box cursor-pointer border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="./Payoo-MFS-Resources-main/assets/send1.png" alt="">
                         <h3>Cashout</h3>
                     </div>
@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- add money section -->
-                <section>
+                <section id="add-money" class="mt-10">
                         <h2 class="text-2xl font-semibold mx-2 ">Add Money</h2>
                         <div class="hero-content flex-col lg:flex-row-reverse">
                             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
@@ -87,7 +87,7 @@
                         </div>
                 </section>
                 <!-- Cash Out -->
-                <section>
+                <section id="cash-out" class="mt-10">
                         <h2 class="text-2xl font-semibold m-2 ">Cash Out</h2>
                         <div class="hero-content flex-col lg:flex-row-reverse">
                             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
@@ -114,6 +114,7 @@
         </header>
     </section>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toggle.js"></script>
 </body>
 
 </html>

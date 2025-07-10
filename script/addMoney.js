@@ -13,6 +13,6 @@ document.getElementById('addMoney-btn')
         document.getElementById('main-balance').innerText=sum;
     }
     else{
-        console.log("invalid pin")
+        alert("invalid pin")
     }
 })
