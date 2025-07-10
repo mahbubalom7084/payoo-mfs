@@ -96,15 +96,15 @@
                                         <label class="label">Agent Number</label>
                                         <input value="01744400024" type="number" class="input"
                                             placeholder="Enter 11 digit account number" />
-                                        <label class="label">Amount</label>
+                                        <label id="cash-out-amount" class="label">Amount</label>
                                         <input type="number" class="input" placeholder="Enter amount to withdeaw" />
                                         <label class="label">Pin Number</label>
-                                        <input value="1234" type="text" class="input"
+                                        <input id="pin" value="1234" type="text" class="input"
                                             placeholder="Enter 4 digit pin number" />
                                         <!-- <div><a class="link link-hover">Forget pin?</a></div> -->
-                                        <button id="login-btn"
+                                        <button id="cashout-btn"
                                             class="rounded-3xl w-80 btn btn-neutral border-none mt-5 bg-[#0874F2]">
-                                            Withdeaw Money</button>
+                                            Withdraw Money</button>
                                     </fieldset>
                                 </div>
                             </div>
@@ -115,6 +115,7 @@
     </section>
     <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
 </body>
 
 </html>
