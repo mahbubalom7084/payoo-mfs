@@ -16,7 +16,7 @@
                 <div class="flex justify-around items-center gap-2">
                     <img class="w-16" src="./Payoo-MFS-Resources-main/assets/Group.png" alt="logo">
                     <div class="#">
-                        <h1 class="text-2xl font-semibold">$ <span>45000</span></h1>
+                        <h1 class="text-2xl font-semibold">$ <span id="main-balance">45000</span></h1>
                         <p class="border rounded p-1">Available Balance</p>
                     </div>
                 </div>
@@ -58,28 +58,27 @@
 
                 <!-- add money section -->
                 <section>
-                        <h2 class="text-2xl font-semibold  ">Add Money</h2>
+                        <h2 class="text-2xl font-semibold mx-2 ">Add Money</h2>
                         <div class="hero-content flex-col lg:flex-row-reverse">
                             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
                                 <div class="card-body">
+                                    <select class="select">
+                                        <option disabled selected>Select bank</option>
+                                        <option value="Bikas">Bikas</option>
+                                        <option value="Nagad">Nagad</option>
+                                        <option value="DBBL">DBBL</option>
+                                    </select>
                                     <fieldset class="fieldset">
-                                        <legend class="fieldset">Select A Bank</legend>
-                                        <select class="select">
-                                            <option disabled selected>Select bank</option>
-                                            <option value="Bikas">Bikas</option>
-                                            <option value="Nagad">Nagad</option>
-                                            <option value="DBBL">DBBL</option>
-                                        </select>
                                         <label class="label">Bank Account Number</label>
-                                        <input value="01744400024" type="number" class="input"
+                                        <input id="account-number" value="01744400024" type="number" class="input"
                                             placeholder="Enter 11 digit account number" />
                                         <label class="label">Amount to Add</label>
-                                        <input type="number" class="input" placeholder="Add amount to withdeaw" />
+                                        <input id="ammount" type="number" class="input" placeholder="Add amount to withdeaw" />
                                         <label class="label">Pin Number</label>
-                                        <input value="1234" type="text" class="input"
+                                        <input id="pin" value="1234" type="text" class="input"
                                             placeholder="Enter 4 digit pin number" />
                                         <!-- <div><a class="link link-hover">Forget pin?</a></div> -->
-                                        <button id="login-btn"
+                                        <button id="addMoney-btn"
                                             class="rounded-3xl w-80 btn btn-neutral border-none mt-5 bg-[#0874F2]">Add
                                             Money</button>
                                     </fieldset>
@@ -114,6 +113,7 @@
             </section>
         </header>
     </section>
+    <script src="./script/addMoney.js"></script>
 </body>
 
 </html>
